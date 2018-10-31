@@ -1,0 +1,61 @@
+<head>
+	<title>Forum Emojis App</title>
+	<link rel="icon" href="http://forums2.cubiccastles.com/uploads/favicon_e3456d85b4ee601d.ico">
+</head>
+
+<body>
+<center>
+<img src="https://cdn.discordapp.com/attachments/506753067052695552/506812177953456128/forum_emojis.png">
+<br/>
+
+<p style="font-family:ubuntu;">
+  As you may have already noticed, and you surely noticed, that our forum has no proper way of using emojis in threads and comments.  
+  <img src="http://bit.ly/cc_confused">
+  <br>
+  Therefore I came up with an alternate way... Just <b>click</b> an emoji you want to use and <b>paste</b> the code to your comment/thread.  
+  <img src="http://bit.ly/cc_wink"> 
+</p>
+<br/>
+<!-- Emojis -->
+<img src="http://bit.ly/cc_slight_smile" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_slight_smile\">")' >
+<img src="http://bit.ly/cc_grinning" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_grinning\">")' >
+<img src="http://bit.ly/cc_smile" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_smile\">")' >
+<img src="http://bit.ly/cc_laughing" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_laughing\">")' >
+<img src="http://bit.ly/cc_joy" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_joy\">")' >
+<img src="http://bit.ly/cc_sunglasses" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_sunglasses\">")' >
+<img src="http://bit.ly/cc_wink" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_wink\">")' >
+<img src="http://bit.ly/cc_smirk" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_smirk\">")' >
+<img src="http://bit.ly/cc_unamused" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_unamused\">")' >
+<img src="http://bit.ly/cc_thinking" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_thinking\">")' >
+<img src="http://bit.ly/cc_innocent" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_innocent\">")' >
+<img src="http://bit.ly/cc_open_mouth" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_open_mouth\">")' >
+<img src="http://bit.ly/cc_confused" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_confused\">")' >
+<img src="http://bit.ly/cc_cry" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_cry\">")' >
+<img src="http://bit.ly/cc_sob" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_sob\">")' >
+<img src="http://bit.ly/cc_scream" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_scream\">")' >
+<img src="http://bit.ly/cc_relaxed" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_relaxed\">")' >
+<img src="http://bit.ly/cc_face_palm" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_face_palm\">")' >
+<img src="http://bit.ly/cc_thumbsup" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_thumbsup\">")' >
+<img src="http://bit.ly/cc_cubit" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_cubit\">")' >
+<br/>
+<br/>
+
+<p style="font-family:ubuntu; font-size:13">
+  Got an idea for emoji? Let me know <a href="http://forums2.cubiccastles.com/index.php?p=/discussion/23679/forum-emojis">here</a>.
+  <br/>
+  -Kewbin
+</p>
+</center>
+</body>
+
+<script>
+function copyToClipboard(text){
+    var dummy = document.createElement("input");
+    document.body.appendChild(dummy);
+    dummy.setAttribute('value', text);
+    dummy.select();
+    document.execCommand("copy");
+    document.body.removeChild(dummy);
+	alert("Copied the text: " + dummy.value);
+}
+</script>
