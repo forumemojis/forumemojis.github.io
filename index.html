@@ -10,6 +10,24 @@
   font-family: zubuntu;
   src: url('Ubuntu-R.ttf')  format('truetype');
 }
+
+.emojis {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
 </style>
 	
 <body>
@@ -25,6 +43,7 @@
   <img src="http://bit.ly/cc_wink"> 
 </p>
 <br/>
+<div class="emojis">
 <!-- Emojis -->
 <img src="http://bit.ly/cc_slight_smile" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_slight_smile\">")' >   
 <img src="http://bit.ly/cc_grinning" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_grinning\">")' >   
@@ -47,14 +66,16 @@
 <img src="http://bit.ly/cc_face_palm" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_face_palm\">")' >   
 <img src="http://bit.ly/cc_thumbsup" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_thumbsup\">")' >   
 <img src="http://bit.ly/cc_cubit" onclick='copyToClipboard("<img src=\"http://bit.ly/cc_cubit\">")' >  
+</div>
 <br/>
 <br/>
-
-<p style="font-family:zubuntu; font-size:13">
+<div class="bottom">
+<p style="font-family:zubuntu; font-size:3">
   Got an idea for emoji? Let me know <a href="http://forums2.cubiccastles.com/index.php?p=/discussion/23679/forum-emojis">here</a>.
   <br/>
   -Kewbin
 </p>
+</div>
 </center>
 <div id="toast" style="font-family:zubuntu;">Succesfully Copied!</div>
 </body>
